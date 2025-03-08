@@ -29,7 +29,7 @@ WebDriver driver;
 	}
 	
 	public void searchByName() {
-		driver.findElement(SearchByField).sendKeys("Gautham");
+		driver.findElement(SearchByField).sendKeys("AlphaBetaG");
 	}
 	
 	public void selectPatient() {
@@ -44,7 +44,7 @@ WebDriver driver;
 	
 	public void updatePatient() {
 		 driver.findElement(Name).clear();
-		    driver.findElement(Name).sendKeys("GauthamCH");
+		    driver.findElement(Name).sendKeys("Gama");
 		    driver.findElement(SaveButton).click();
 	}
 	

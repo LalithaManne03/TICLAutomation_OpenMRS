@@ -40,7 +40,7 @@ public class RegisterPatient{
 	}
 	
 	public void givenName() {
-		driver.findElement(Name).sendKeys("Gautham");
+		driver.findElement(Name).sendKeys("AlphaBetaG");
 		
 	}
 	public void familyName() {

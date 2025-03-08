@@ -33,7 +33,7 @@ WebDriver driver;
 		wdw.until(ExpectedConditions.visibilityOfElementLocated(PersonalName));
 				
 				WebElement actual_updated_name =  driver.findElement(PersonalName);
-				Assert.assertEquals(actual_updated_name.getText(), "GauthamCH");
+				Assert.assertEquals(actual_updated_name.getText(), "AlphaBetaGGama");
 	}
 	
 }

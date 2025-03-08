@@ -7,6 +7,8 @@
         <methods>
           <include name="close"/>
           <include name="UpdatePatient"/>
+          <include name="ValidCredentialsTest"/>
+          <include name="RegisterPatient"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Test.RunTestCases -->

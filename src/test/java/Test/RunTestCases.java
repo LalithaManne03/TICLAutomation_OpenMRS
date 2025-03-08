@@ -29,7 +29,7 @@ public class RunTestCases extends Base{
 		lp.InValidMessage();
 		
 	}
-
+    
 	
 
 	@Test
@@ -49,7 +49,7 @@ public class RunTestCases extends Base{
 	}
 	
 	@Test
-	public void RegisterPatient() {
+	public void RegisterPatient() throws InterruptedException {
 		LoginPage lp=new LoginPage(driver);
 		HomePage hpage = new HomePage(driver);
 		RegisterPatient rg = new RegisterPatient(driver);
@@ -57,8 +57,11 @@ public class RunTestCases extends Base{
 		
 		lp.enterUsername("admin");
         lp.enterPassword("Admin123");
+
 		lp.selectLocation();
 		lp.signIn();
+		Thread.sleep(5000);
+
 		hpage.validMessage();
 		rg.registerButton();
 		rg.givenName();
@@ -81,7 +84,7 @@ public class RunTestCases extends Base{
 	}
 	
 	@Test
-	public void UpdatePatient()
+	public void UpdatePatient() throws InterruptedException
 	{
 		LoginPage lp=new LoginPage(driver);
 		HomePage homepage = new HomePage(driver);
@@ -91,8 +94,12 @@ public class RunTestCases extends Base{
 		
 		lp.enterUsername("admin");
         lp.enterPassword("Admin123");
+        
 		lp.selectLocation();
+		
 		lp.signIn();
+		Thread.sleep(5000);
+
 		homepage.validMessage();
 		up.findpatient();
 		up.searchByName();
